@@ -41,3 +41,18 @@ The Wireshark icon is displayed on the desktop:
 <img width="507" alt="wireshark1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Lab/assets/136107996/54059887-830b-4065-8ec0-2c035bdeff54">
 
 ## Steps - Section B
+To capture traffic, launch Wireshark by double-clicking the tool.
+
+<img width="507" alt="wireshark1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/d080d47a-0dfa-4af5-bdcf-2223c5f9cd67">
+The Wireshark interface is shown:
+
+<img width="630" alt="wireshark interface" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/3c009ad2-a757-4ac3-a1ea-55eed0acd41b">
+
+The Wireshark interface shows a network interfaces available. 
+
+<img width="524" alt="ethernet selection1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/6cd913b9-ff94-4d14-8797-5ef811e88729">
+
+To capture traffic, Select the ethernet network and click start:
+
+<img width="506" alt="capture click1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/81693042-b0c2-431d-bb91-24442f2dbb6e">
+
