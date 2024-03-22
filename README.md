@@ -92,5 +92,11 @@ The Wireshark interface contains components that are used to interact with the p
 
 The ***Packet List Pane*** contains seven headings namely:
 + Number(No.): The packets are arranged in numbered ascending order.
-+ Time
++ Time: It shows the time the packet was captured.
++ Source: The IP address of the originator of the packet.
++ Destination: The IP address of the destination of the packet.
++ Protocol: The type of protocol used by the packet.
++ length: The size of the packet.
++ Infomation(Info): It displays brief information about the packet 
+## Packet Analysis
 
