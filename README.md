@@ -77,5 +77,20 @@ To capture traffic, Select the ethernet network and click start:
 
 Wireshark starts capturing traffic:
 
-<img width="511" alt="capturing apckets1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/3bea917b-c733-4c0e-9627-67064c8450e8">
+<img width="669" alt="captured traffic" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/9b042750-f189-430b-ac37-a48964d6b3c5">
+
+## 
+The Wireshark interface contains components that are used to interact with the packets. 
++ The Main Toolbar: It contains packet capture tools.
++ The Filter Toolbar: It is used to filter packets.
++ The Packets List Pane: Contains lists of captured packets.
++ The Packet byte Pane: Contains information about each captured packet.
++ The Status Toolbar: It shows the profile and displays the packet number.
+
+<img width="669" alt="captured trafiic11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/e26d1701-d030-477a-b8ca-cfb1b4cd7174">
+
+
+The ***Packet List Pane*** contains seven headings namely:
++ Number(No.): The packets are arranged in numbered ascending order.
++ Time
 
