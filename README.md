@@ -101,12 +101,39 @@ The ***Packet List Pane*** contains seven headings namely:
 + Infomation(Info): It displays brief information about the packet
 
 ## Packet Analysis
+
+***Packet No. 1***
+
 To analyse the traffic, Packet number one is selected. Click on the packet to examine the packet in the Packet Detail Pane:
 
-***Ethernet Protocol***
+***Packet List Pane Information***
 
 <img width="664" alt="analy11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/01bcd1ee-2bc0-4d19-bcf7-bf5b7d620747">
 
-From the Packet List Pane, the time of the first packet capture was 19:33:43. The source  and destination IP addresses are 192.168.10.5 and 104.46.162.224 respectively. The IP address 198.168.10.5 is the Windows 10 VM trying to access the web server on 104.46.162.224.
+From the Packet List Pane, the first packet capture was 19:33:43. The source  and destination IP addresses are 192.168.10.5 and 104.46.162.224 respectively. The IP address 198.168.10.5 is the Windows 10 VM trying to access the web server on 104.46.162.224.
 From the Packet List Pane, the protocol being used for the communication Transmission Mission Protocol(TCP). The size of the packet is 1514.
-The info section in the Packet List pane shows that the captured packet is an acknowledgement(Ack) packet
+The info section in the Packet List Pane shows that the captured packet is an acknowledgement(Ack) packet being sent from the source port 50268 to destination port 433, which indicates that it is web traffic.
+
+***Packet Detail Pane Information***
+
+__Frame__: The frame contains information such as interface ID and name, Encapsulation type, date and time etc. This is usually gathered by Wireshark on the packet.
+
+<img width="666" alt="pd fr1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/f672c88c-43b7-489f-9107-e54346716aec">
+
+##
+
+__Ethernet__: The Ethernet contains the source and destination Media Access Control(MAC) address. The source MAC address is 08:00:27:aa:bf:61 and the destination MAC address is 08:00:27:7e:4a:c4.
+
+<img width="667" alt="pd et1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/dbe5726a-56c9-4e9c-bf03-21e6b2965847">
+
+##
+
+__Internet Protocol Version 4__: The Internet Protocol Version 4 field contains the source and destination IP address, TTL, protocol version and other important details used during the communication.
+
+<img width="664" alt="pdipv 1png" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/d8c970f1-27be-41cb-bdeb-2ffa64069c63">
+
+##
+
+__Transmissin Control Protocol__: The Transmission Control Protocol field contains  the source and destination port. In this lab, the source and destination ports are 50268 and 443 respectively. An important information in the TCP is the Sequence number(1), Acknowledgement number(1) and Other Wireshark-generated fields. _Note_: The Wireshark-generated information are the ones wrapped in square brackets([]).
+
+<img width="665" alt="pd tcp 1png" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/4079b660-5739-459f-a08f-a8ad3e29a4bd">
