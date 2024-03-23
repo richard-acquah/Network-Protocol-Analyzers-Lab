@@ -88,8 +88,7 @@ The Wireshark interface contains components that are used to interact with the p
 + The packet Byte Pane: 
 + The Status Toolbar: It shows the profile and the packet number.
 
-<img width="669" alt="captured trafiic11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/e26d1701-d030-477a-b8ca-cfb1b4cd7174">
-
+<img width="669" alt="captured trafiic11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/0dda3d7f-eb58-4298-9a75-d818b38d6ef4">
 
 The ***Packet List Pane*** contains seven headings namely:
 + Number(No.): The packets are arranged in numbered ascending order.
@@ -112,7 +111,7 @@ To analyse the traffic, Packet number one is selected. Click on the packet to ex
 
 From the Packet List Pane, the first packet capture was 19:33:43. The source  and destination IP addresses are 192.168.10.5 and 104.46.162.224 respectively. The IP address 198.168.10.5 is the Windows 10 VM trying to access the web server on 104.46.162.224.
 From the Packet List Pane, the protocol being used for the communication Transmission Mission Protocol(TCP). The size of the packet is 1514.
-The info section in the Packet List Pane shows that the captured packet is an acknowledgement(Ack) packet being sent from the source port 50268 to destination port 433, which indicates that it is web traffic.
+The info section in the Packet List Pane shows that the captured packet is an acknowledgement(Ack) packet being sent from the source port 50268 to destination port 433, which indicates it is web traffic.
 
 ***Packet Detail Pane Information***
 
@@ -137,3 +136,41 @@ __Internet Protocol Version 4__: The Internet Protocol Version 4 field contains 
 __Transmissin Control Protocol__: The Transmission Control Protocol field contains  the source and destination port. In this lab, the source and destination ports are 50268 and 443 respectively. An important information in the TCP is the Sequence number(1), Acknowledgement number(1) and Other Wireshark-generated fields. _Note_: The Wireshark-generated information are the ones wrapped in square brackets([]).
 
 <img width="665" alt="pd tcp 1png" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/4079b660-5739-459f-a08f-a8ad3e29a4bd">
+
+## Packet Filtering
+
+To search for a specific packet or information in captured packets as they accumulate fast, filters are used to get to specific information. 
+
+***ip.addr***
+
+In this lab, the filter ***ip.addr == 192.168.10.5*** is used to search for all occurrences of the IP address 192.168.10.5 in the captured traffic.
+
+<img width="666" alt="filt addr1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/006f259a-2677-4f52-8ea9-dfbcc986ab90">
+
+***ip.src***
+
+To filter by only the source IP address, the filter ip.src == 192.168.10.5. This filter displays all occurrences of the IP address 192.168.10.5 as a source IP address.
+
+<img width="667" alt="ipsrc1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/63b77bec-af53-468b-8a4d-c2c45f6f4e91">
+
+##
+
+To search for a specific protocol such as TLS(HTTPS), FTP, TCP, SSH, UDP, HTTP and ICMP, the protocol can be entered into the  Filter Toolbar field to search for the protocol.
+
+***tls***
+
+In this lab, the TLS protocol is used. This filters all communication using the TLS protocol.
+
+<img width="667" alt="fil tls1" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/c192450d-0ccf-440f-8340-a798b0c5778b">
+
+***udp***
+
+Packet filtering with UDP protocol.
+
+<img width="665" alt="udp fil 1png" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/456a6abf-6d82-48fb-8890-49e5974f0e2a">
+
+
+
+
+
+
