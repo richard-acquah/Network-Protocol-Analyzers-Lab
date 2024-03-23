@@ -1,4 +1,4 @@
-# Network-Protocol-Analysis With Wireshark
+# Network Protocol Analysis With Wireshark
 
 ## Objectives
 This lab seeks to demonstrate how Wireshark is installed on a Windows 10 virtual machine and how it is used to capture network traffic. The primary focus of this lab was to capture traffic traversing the Windows 10 virtual machine interface card and review the captured traffic.
@@ -84,8 +84,9 @@ The Wireshark interface contains components that are used to interact with the p
 + The Main Toolbar: It contains packet capture tools.
 + The Filter Toolbar: It is used to filter packets.
 + The Packets List Pane: Contains lists of captured packets.
-+ The Packet byte Pane: Contains information about each captured packet.
-+ The Status Toolbar: It shows the profile and displays the packet number.
++ The Packet details Pane: Contains information about each captured packet.
++ The packet Byte Pane: 
++ The Status Toolbar: It shows the profile and the packet number.
 
 <img width="669" alt="captured trafiic11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/e26d1701-d030-477a-b8ca-cfb1b4cd7174">
 
@@ -97,6 +98,15 @@ The ***Packet List Pane*** contains seven headings namely:
 + Destination: The IP address of the destination of the packet.
 + Protocol: The type of protocol used by the packet.
 + length: The size of the packet.
-+ Infomation(Info): It displays brief information about the packet 
-## Packet Analysis
++ Infomation(Info): It displays brief information about the packet
 
+## Packet Analysis
+To analyse the traffic, Packet number one is selected. Click on the packet to examine the packet in the Packet Detail Pane:
+
+***Ethernet Protocol***
+
+<img width="664" alt="analy11" src="https://github.com/richard-acquah/Network-Protocol-Analyzers-Wireshark-Lab/assets/136107996/01bcd1ee-2bc0-4d19-bcf7-bf5b7d620747">
+
+From the Packet List Pane, the time of the first packet capture was 19:33:43. The source  and destination IP addresses are 192.168.10.5 and 104.46.162.224 respectively. The IP address 198.168.10.5 is the Windows 10 VM trying to access the web server on 104.46.162.224.
+From the Packet List Pane, the protocol being used for the communication Transmission Mission Protocol(TCP). The size of the packet is 1514.
+The info section in the Packet List pane shows that the captured packet is an acknowledgement(Ack) packet
